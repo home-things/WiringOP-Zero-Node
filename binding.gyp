@@ -4,7 +4,7 @@
       'target_name': 'wiringPi',
       'sources': [
         'src/addon.cc',
-        
+
         'src/wiringPi.cc',
         'src/softPwm.cc',
         'src/softServo.cc',
@@ -15,7 +15,7 @@
         'src/wiringShift.cc',
         'src/wiringPiISR.cc',
         'src/wpi.cc',
-        
+
         'src/extensions/extensions.cc',
         'src/extensions/drcSerial.cc',
         'src/extensions/max5322.cc',
@@ -33,9 +33,7 @@
         'src/extensions/pcf8591.cc',
         'src/extensions/sn3218.cc',
         'src/extensions/sr595.cc',
-        'src/extensions/pca9685.cc',
-        'src/extensions/dac7678.cc',
-        
+
         'src/devlib/devlib.cc',
         'src/devlib/ds1302.cc',
         'src/devlib/gertboard.cc',
@@ -44,16 +42,10 @@
         'src/devlib/maxdetect.cc',
         'src/devlib/piFace.cc',
         'src/devlib/piGlow.cc',
-        'src/devlib/piNes.cc',
-        'src/devlib/tcs34725.cc'
-      ],
-      'include_dirs': [
-        'wiringpi/wiringPi',
-        'wiringpi/devLib'
+        'src/devlib/piNes.cc'
       ],
       'libraries': [
-        '<!(pwd)/wiringpi/wiringPi/libwiringPi.a',
-        '<!(pwd)/wiringpi/devLib/libwiringPiDev.a'
+        '-lwiringPi',
       ],
       'cflags': [
         '-Wall'

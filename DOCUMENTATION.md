@@ -251,24 +251,6 @@ This writes the given value to the supplied analog pin.
 
 You will need to register additional analog modules to enable this function for devices such as the Gertboard.
 
-### pulseIn(pin, state)
-<span class="api-info"><code> >= 1.1.0 </code></span>
-
-Reads a pulse (either HIGH or LOW) on a pin.
-
-For example, if `state` is HIGH, pulseIn waits for the pin to go HIGH, starts timing, then waits for the pin to go LOW and stops timing.
-
-Returns the length of the pulse in microseconds.
-
-Gives up and returns 0 if no pulse starts within a specified time out.
-
-`state` can be one of the following values:
-
-* `HIGH`
-  <span class="api-info-list"><code> >= 0.1.2 </code></span>
-* `LOW`
-  <span class="api-info-list"><code> >= 0.1.2 </code></span>
-
 ### delay(milliseconds)
 <span class="api-info"><code> >= 1.1.0 </code></span>
 
@@ -328,9 +310,6 @@ wpi.wiringPiISR(7, wpi.INT_EDGE_FALLING, function(delta) {
   console.log('Pin 7 changed to LOW (', delta, ')');
 });
 ```
-### wiringPiISRCancel(pin)
-<span class="api-info"><code> >= 2.1.0 </code></span>
-
 ---
 
 ## Raspberry Pi hardware specific functions

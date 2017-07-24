@@ -1,23 +1,25 @@
 {
-  "name": "wiring-pi",
+  "name": "wiring-op-zero",
   "version": "2.2.1",
-  "description": "Bindings to wiringPi",
+  "description": "Bindings to WiringOP-Zero",
   "main": "lib/exports.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "/bin/bash ./install.sh"
+    "preinstall": "./check-lib.sh",
+    "install": "node-gyp configure",
+    "postinstall": "node-gyp build"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:WiringPi/WiringPi-Node.git"
+    "url": "git@github.com:crux153/WiringOP-Zero-Node.git"
   },
   "keywords": [
     "wiringPi",
     "gpio",
-    "raspberry",
-    "pi",
-    "raspberrypi",
-    "bcm2835"
+    "wiringOP",
+    "orange pi",
+    "orange pi zero",
+    "opi zero"
   ],
   "author": "Igor Soarez <igorsoarez@gmail.com>",
   "contributors": [
