@@ -5,13 +5,13 @@ Based on the awesome work of [Soarez](https://github.com/Soarez/node-wiring-pi)
 ## Install
 
 ```
-npm install wiring-pi
+npm install wiring-op-zero
 ```
 
 ## Usage
 
 ```javascript
-var wpi = require('wiring-pi');
+var wpi = require('wiring-op-zero');
 ```
 ## Documentation
 
@@ -19,7 +19,7 @@ See the [DOCUMENTATION.md](https://github.com/WiringPi/WiringPi-Node/blob/master
 
 ## Contributing
 
-wiring-pi is an [**OPEN Open Source Project**](http://openopensource.org/). This means that:
+wiring-op-zero is an [**OPEN Open Source Project**](http://openopensource.org/). This means that:
 
 > Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
 
@@ -27,7 +27,7 @@ See the [CONTRIBUTING.md](https://github.com/WiringPi/WiringPi-Node/blob/master/
 
 ### Contributors
 
-wiring-pi is only possible due to the excellent work of the following contributors:
+wiring-op-zero is only possible due to the excellent work of the following contributors:
 
 Contributor | GitHub profile | Twitter profile |
 --- | --- | ---
